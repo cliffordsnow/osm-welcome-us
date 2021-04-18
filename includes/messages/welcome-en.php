@@ -40,7 +40,7 @@ $welcome[$language]['info_other'] = 'If you want to know how to tag something, t
 
 $welcome[$language]['info_solution'] = 'to search for “site:wiki.openstreetmap.org [search term]” with your favourite search engine. You can also browse through the questions on '.markdown_link('the Help site', 'https://help.openstreetmap.org').' or ask one yourself, or post on '.markdown_link('the forum', 'https://forum.openstreetmap.org/viewforum.php?id=29').'.';
 
-$welcome[$language]['news'] = 'If you want to stay on top of the Belgian community, subscribe to the '.markdown_link('Belgian mailing list', 'https://lists.openstreetmap.org/listinfo/talk-be').' or sign up for the '.markdown_link('Belgian newsletter', 'http://osm.us13.list-manage.com/subscribe?u=cc6632a49e784f67574e50269&id=5c2416bba6').' or chat with us on '.markdown_link('Riot', 'https://riot.im/app/#/group/+osmbe:matrix.org').'. You can also follow '.markdown_link('@osm_be', 'https://twitter.com/osm_be').' on Twitter, become a member of the '.markdown_link('Meetup group', 'https://www.meetup.com/OpenStreetMap-Belgium/').' or the '.markdown_link('Facebook group', 'https://www.facebook.com/groups/1419016881706058/').'.';
+$welcome[$language]['news'] = 'If you want to stay on top of the United States community, subscribe to the '.markdown_link('US  mailing list', 'https://lists.openstreetmap.org/listinfo/talk-us').' or sign up for the '.markdown_link('Belgian newsletter', 'http://osm.us3.list-manage.com/subscribe?u=https://openstreetmap.us3.list-manage.com/subscribe?u=162692bfdedb78ec46fd108a3&id=801ce00e6d').' or chat with us on '.markdown_link('Slack', 'https://osmus.slack.com/').'. You can also follow '.markdown_link('@OpenStreetMapUS', 'https://twitter.com/OpenStreetMapUS').' on Twitter, or the '.markdown_link('Facebook group', 'https://www.facebook.com/groups/osm.us/').'.';
 
 $welcome[$language]['resultmaps'] = 'To see active mappers in your neighbourhood or to check out how much you’ve contributed, check out the maps and stats at '.markdown_link('resultmaps.neis-one.org', 'http://resultmaps.neis-one.org/').'.';
 
@@ -48,6 +48,6 @@ $welcome[$language]['weeklyosm'] = 'There’s also a '.markdown_link('weekly, gl
 
 $welcome[$language]['endingsentence'] = 'Happy Mapping!';
 
-$welcome[$language]['osm-be'] = 'OpenStreetMap Belgium';
+$welcome[$language]['osm-us'] = 'OpenStreetMap United States';
 
 $welcome[$language]['multiple_langs'] = 'We sent this message in multiple languages, because we were unable to detect your language.';
