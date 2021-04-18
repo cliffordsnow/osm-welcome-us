@@ -24,8 +24,6 @@ $welcome[$language]['hi'] = 'Hi %1$s';
 
 $welcome[$language]['bravo'] = 'I saw that you made your first edit on OpenStreetMap. Congratulations and thanks! You’re now a member of the OSM community.';
 
-$welcome[$language]['reality'] = 'We don’t only exist '.markdown_link('online', 'http://osm.be/').', but also '.markdown_link('in real life', 'https://www.meetup.com/OpenStreetMap-Belgium/').'.';
-
 $welcome[$language]['questions'] = 'If you’ve got any questions, we can help you: if you think you broke something, don’t know for sure how to map something, or just want to know more about OpenStreetMap, you can contact us.';
 
 $welcome[$language]['helpintro'] = 'Here’s some help to get you started:';

@@ -56,7 +56,7 @@ function page_start ($title, $backto=null, $beforetitle=null) {
   <body>
   
 	<header>
-		<h1>New OSM Contributors in United States</h1>
+		<h1>New OSM Contributors in United States DEMO</h1>
 		
 		<nav>';
 			
@@ -103,7 +103,7 @@ function page_end () {
 	</div>
 	
 	<footer>
-		<p>An <a href="https://openstreetmap.us/">OpenStreetMap US</a> project. <a href="https://github.com/cliffordsnow/osm-welcome-us/">Source code</a> available under AGPLv3+. Powered by <a href="https://resultmaps.neis-one.org/newestosm?c=United States">neis-one.org</a></p>
+		<p>An <a href="https://openstreetmap.us/">OpenStreetMap US</a> project. <a href="https://github.com/osmbe/osm-welcome-belgium/">Source code</a> available under AGPLv3+. Powered by <a href="https://resultmaps.neis-one.org/newestosm?c=United States">neis-one.org</a></p>
 	</footer>
 	
 	';
