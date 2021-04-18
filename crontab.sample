@@ -1,0 +1,14 @@
+# m h  dom mon dow   command
+
+# This crontab assumes that your installation is at /var/www/osmwelcome, you want to backup to /var/backups/osmwelcome. Create that directory first.
+
+# Make a data export every day at 0:00
+# This exports to /var/www/osmwelcome/htdocs/exports. Create that directory first and make sure www-data has write access to it.
+#0 0 * * * cd /var/www/osmwelcome/ && sudo -u www-data zip -r "/var/www/osmwelcome/htdocs/exports/`date +\%Y-\%m-\%d`.zip" contributors && sudo -u www-data rm -rf "/var/www/osmwelcome/htdocs/exports/`date --date '7 days ago' +\%Y-\%m-\%d`.zip"
+
+# Take a backup of the contributors at 4:50
+50 4 * * * sudo -u www-data tar -zcf "/opt/backups/osmwelcome/`date +\%Y-\%m-\%d`.tgz" /var/www/osmwelcome/contributors/ && sudo -u www-data rm -rf "/var/backups/osmwelcome/`date --date '15 days ago' +\%Y-\%m-\%d`.tgz"
+# Update existing contributors at 5:00
+0 5 * * * sudo -u apache php /opt/welcome/update_existing.php >"/opt/welcome/updatelog/`date +\%Y-\%m-\%d_\%H-\%M-\%S`_update.log" 2>&1
+# Get new contributors at 6:00
+0 6 * * * sudo -u apache php /opt/welcome/get_new.php >"/opt/welcome/updatelog/`date +\%Y-\%m-\%d_\%H-\%M-\%S`_new.log" 2>&1
