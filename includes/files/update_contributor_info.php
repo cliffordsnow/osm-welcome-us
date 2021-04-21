@@ -21,6 +21,8 @@ include_once(INCLUDES_PATH . '/api/detect_editors.php');
 include_once(INCLUDES_PATH . '/api/detect_language.php');
 
 $language_codes = array(
+        'en' => 'English',
+	'es' => 'Spanish',
 	'nl' => 'Dutch',
 	'fr' => 'French',
 	'de' => 'German'
