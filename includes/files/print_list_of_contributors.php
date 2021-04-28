@@ -112,20 +112,12 @@ function print_list_of_contributors () {
 			if ($filter->isEnabled(FILTER_ANY_LANGUAGE) && !$filter->isEnabled(FILTER_LANG_UNKNOWN)) continue;
 		} else {
 			switch ($info->language) {
-				case 'Dutch' :
-					if ($filter->isEnabled(FILTER_ANY_LANGUAGE) && !$filter->isEnabled(FILTER_LANG_DUTCH)) continue 2;
-					$lang = 'NL';
-					break;
-				case 'French' :
-					if ($filter->isEnabled(FILTER_ANY_LANGUAGE) && !$filter->isEnabled(FILTER_LANG_FRENCH)) continue 2;
-					$lang = 'FR';
-					break;
 				case 'English' :
 					if ($filter->isEnabled(FILTER_ANY_LANGUAGE) && !$filter->isEnabled(FILTER_LANG_ENGLISH)) continue 2;
 					$lang = 'EN';
 					break;
-				case 'German' :
-					if ($filter->isEnabled(FILTER_ANY_LANGUAGE) && !$filter->isEnabled(FILTER_LANG_GERMAN)) continue 2;
+				case 'Spanish' :
+					if ($filter->isEnabled(FILTER_ANY_LANGUAGE) && !$filter->isEnabled(FILTER_LANG_SPANISH)) continue 2;
 					$lang = 'DE';
 					break;
 				default :

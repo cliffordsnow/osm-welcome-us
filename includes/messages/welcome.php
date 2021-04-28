@@ -14,7 +14,7 @@
  * program. If not, see <https://www.gnu.org/licenses/>.
  */
 
-/* This needs a major change since we only use one language */
+/* This needs a major change since we only use two languages, English and Spanish */
 
 $welcome_bottom['en']['single_lang'] = 'We sent this message in %1$s, because we thought that to be your language.';
 /* $welcome_bottom['nl']['single_lang'] = 'We hebben dit bericht in het %1$s verzonden, omdat we denken dat dat je taal is.';

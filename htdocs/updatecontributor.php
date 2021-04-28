@@ -25,6 +25,7 @@ if ( !($userid = intval($_GET['userid'])) ) {
 }
 
 update_contributor_info($userid, null, DETECT_EDITORS);
+update_contributor_info($userid, null, DETECT_LANGUAGE);
 
 header('Location: contributor.php?updated&userid='.$userid);
 

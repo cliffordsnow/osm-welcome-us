@@ -22,10 +22,7 @@ include_once(INCLUDES_PATH . '/api/detect_language.php');
 
 $language_codes = array(
         'en' => 'English',
-	'es' => 'Spanish',
-	'nl' => 'Dutch',
-	'fr' => 'French',
-	'de' => 'German'
+	'es' => 'Spanish'
 );
 define('DETECT_LANGUAGE', 1);
 define('DETECT_EDITORS', 2);
@@ -80,7 +77,7 @@ function update_contributor_info ($userid, $firstedit=null, $detect=0, $import=n
 	}
 	if ($detect & DETECT_LANGUAGE) {
 		// Detect language
-		$info['language'] = @$GLOBALS['language_codes'][detect_language($userid)];
+		$info['language'] = $GLOBALS['language_codes'][detect_language($userid)];
 	}
 	
 	if (!is_null($firstedit)) {

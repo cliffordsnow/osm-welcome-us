@@ -41,7 +41,7 @@ function generate_message ($type, $userid, $language=null) {
 		<input type="hidden" name="type" value="'.$type.'"></input>
 		<textarea name="messagetext" id="copyablemessage">';
 
-	switch ($type) {
+	switch ($type) { //This section needs revision to include English and Spanish languages
 		
 		case 'welcome' :
 			

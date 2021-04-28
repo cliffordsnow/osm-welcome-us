@@ -50,7 +50,7 @@ function edit_button ($item_to_edit, $userid, $text) {
 	echo '</a>';
 }
 
-$languages = array('Dutch', 'French', 'German', 'English');
+$languages = array('English', 'Spanish');
 function language_selector ($current=null) {
 
 	if (is_null($current)) {

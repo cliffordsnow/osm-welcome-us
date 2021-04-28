@@ -23,8 +23,9 @@ function detect_language ($userid) {
 	
 	foreach ($changesets->changeset as $changeset) {
 		$changeset_meta = call_api('changeset/'.$changeset['id'], array('include_discussion'=>false), 'GET', NO_AUTH);
-		
-		if (preg_match(';<tag k="locale" v="(.*?)"/>;i', $changeset_meta, $matches) === 1) {
+/*		if (preg_match(';<tag k="locale" v="(.*?)"/>;i', $changeset_meta, $matches) === 1) { */
+		if (preg_match(';<tag k="locale" v="([a-z][a-z]).*"/>;i', $changeset_meta, $matches) === 1) {
+			error_log($matches[1]);
 			return $matches[1];
 		}
 	}
