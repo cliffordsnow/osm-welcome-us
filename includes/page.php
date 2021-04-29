@@ -103,7 +103,7 @@ function page_end () {
 	</div>
 	
 	<footer>
-		<p>An <a href="https://openstreetmap.us/">OpenStreetMap US</a> project. <a href="https://github.com/osmbe/osm-welcome-belgium/">Source code</a> available under AGPLv3+. Powered by <a href="https://resultmaps.neis-one.org/newestosm?c=United States">neis-one.org</a></p>
+		<p>An <a href="https://openstreetmap.us/">OpenStreetMap US</a> project. <a href="https://github.com/cliffordsnow/osm-welcome-us/">Source code</a> available under AGPLv3+. Powered by <a href="https://resultmaps.neis-one.org/newestosm?c=United States">neis-one.org</a></p>
 	</footer>
 	
 	';
