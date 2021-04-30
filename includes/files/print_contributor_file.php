@@ -214,7 +214,7 @@ function print_contributor_file ($userid, $info=null) {
 				echo 'unknown';
 			} else {
 				switch ($info->language) {
-					case 'Dutch' : case 'French' : case 'English' : case 'German' :
+					case 'English' : case 'Spanish' :
 						echo $info->language;
 						break;
 					default :
@@ -308,7 +308,7 @@ function print_contributor_file ($userid, $info=null) {
 				<a class="button" href="https://www.openstreetmap.org/message/new/';
 				echo rawurlencode($info->display_name);
 				echo '" target="_blank">Send message</a>
-				<a class="button" href="http://hdyc.neis-one.org/?';
+				<a class="button" href="https://hdyc.neis-one.org/?';
 				echo rawurlencode($info->display_name);
 				echo '" target="_blank">How did they contribute?</a>
 			</section>';
