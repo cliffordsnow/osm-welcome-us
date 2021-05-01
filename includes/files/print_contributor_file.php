@@ -308,9 +308,12 @@ function print_contributor_file ($userid, $info=null) {
 				<a class="button" href="https://www.openstreetmap.org/message/new/';
 				echo rawurlencode($info->display_name);
 				echo '" target="_blank">Send message</a>
-				<a class="button" href="https://hdyc.neis-one.org/?';
-				echo rawurlencode($info->display_name);
-				echo '" target="_blank">How did they contribute?</a>
+				<a class="button" href="https://osmcha.org/?filters=';
+				echo rawurlencode('{"users":[{"label":"' . $info->display_name . '","value":"' . $info->display_name . '"}]}');
+				echo '" target="_blank">View User on OSMCHA</a>
+				<a class="button" href="http://hdyc.neis-one.org/?';
+                                echo rawurlencode($info->display_name);
+                                echo '" target="_blank">How did they contribute?</a>
 			</section>';
 			if (isset($info->welcomed_by) && !is_null($info->welcomed_by)) {
 				echo '
