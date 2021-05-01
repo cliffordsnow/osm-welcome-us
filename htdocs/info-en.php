@@ -17,7 +17,7 @@ include_once('paths.php');
 include_once(INCLUDES_PATH.'/page.php');
 
 register_style('css/info.css');
-page_start('Help: welcomeing new contributors', 'info.php');
+page_start('Help: welcoming new contributors', 'info.php');
 
 function markdown_link ($text, $url) {
 	echo '<span class="invisible">[</span><a href="';
@@ -31,7 +31,7 @@ function markdown_link ($text, $url) {
 ?>
 
 	<article>
-		<section id="terms">
+		<section id=terms">
 			<h3>Hints to help new contributors</h3>
 			<p>Add hints below:</p>
 			<ul>

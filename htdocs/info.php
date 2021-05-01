@@ -23,8 +23,8 @@ page_start('Help on welcoming new contributors');
 	<article>
 		<nav>
 			<ul>
-				<li><a href="info-nl.php">Nederlands</a></li>
-				<li><a href="info-fr.php">Français</a></li>
+				<li><a href="info-en.php">English</a></li>
+				<li><a href="info-es.php">Spanish</a></li>
 			</ul>
 		</nav>
 	</article>

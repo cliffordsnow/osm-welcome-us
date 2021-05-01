@@ -13,23 +13,38 @@
  * You should have received a copy of the GNU Affero General Public License along with this
  * program. If not, see <https://www.gnu.org/licenses/>.
  */
+include_once('paths.php');
+include_once(INCLUDES_PATH.'/page.php');
 
-require_once(INCLUDES_PATH . '/api/fetch_changesets.php');
+register_style('css/info.css');
+page_start('Ayuda: dar la bienvenida a nuevos colaboradores', 'info.php');
 
-
-function detect_language ($userid) {
-	
-	$changesets = fetch_changesets_by_user_id($userid); // This function has a cache, so we don't query the same from the API twice
-	
-	foreach ($changesets->changeset as $changeset) {
-		error_log($changeset[id]);
-		$changeset_meta = call_api('changeset/'.$changeset['id'], array('include_discussion'=>false), 'GET', NO_AUTH);
-/*		if (preg_match(';<tag k="locale" v="(.*?)"/>;i', $changeset_meta, $matches) === 1) { */
-		if (preg_match(';<tag k="locale" v="([a-z][a-z]).*"/>;i', $changeset_meta, $matches) === 1) {
-			error_log($matches[1]);
-			return $matches[1];
-		}
-	}
-
-	return 'unknown';
+function markdown_link ($text, $url) {
+	echo '<span class="invisible">[</span><a href="';
+	echo $url;
+	echo '">';
+	echo $text;
+	echo '</a><span class="invisible">](';
+	echo $url;
+	echo ')</span>';
 }
+?>
+
+	<article>
+		<section id=terms">
+			<h3>Consejos para ayudar a las nuevas contribuyentes </h3>
+			<p>Add hints below:</p>
+			<ul>
+				<li>Insinuación 1</li>
+				<li>Insinuación 2</li>
+				<li>Insinuación 3</li>
+				<li>Insinuación 4</li>
+			</ul>
+
+			<p>Palabras finales aquí</p>
+		</section>
+	</article>
+
+<?php
+page_end();
+?>
