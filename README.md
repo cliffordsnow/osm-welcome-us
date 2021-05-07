@@ -2,7 +2,7 @@
 
 *Welcoming new OpenStreetMappers in the United States*
 
-This was originally developed in Beligum and can be found in the github repository https://github.com/osmbe/osm-welcome-belgium
+This was originally developed in Belgium and can be found in the GitHub repository https://github.com/osmbe/osm-welcome-belgium
 
 This is a platform to coordinate welcoming new mappers in the United States. The source code is hackish, extremely ugly and doesn't seem to follow *any* design principle, but it works. Mostly.
 
@@ -15,7 +15,7 @@ You can see a live instance for [United States](https://welcome.snowandsnow.us/)
 
 ## Installing
 
-* Put the contents of the repo on a webhost. I'm assuming you know how. If you don't, consider giving up now.
+* Put the contents of the repo on a web host. I'm assuming you know how. If you don't, consider giving up now.
 * Create the directories `users`, `userpics`, `contributors` and `updatelog` and make them writable for the web server process. On a typical Apache on Linux setup, this can e.g. be done by setting the group to `www-data` and setting the group write execution bit:
     ```
     dirs="users userpics contributors updatelog"; mkdir $dirs; chown $USER:www-data $dirs; chmod 0770 $dirs
@@ -33,7 +33,7 @@ To get new contributors and to update the data about the known ones is done by e
 
 Adding data export facilities to the server can also be achieved with periodic jobs. Just ZIP the folder `contributors` and put it on a place within the `htdocs`. Update the server configuration to enable directory indices for the folder they get put in, if you desire so. (Example config for that is commented out in the example files.)
 
-The file crontab.sample contains an example cron setup to do automatic updates and exports.
+The file `crontab.sample` contains an example cron setup to do automatic updates and exports.
 
 ## Testing/dev also done on nginx / phpfpm and apache
 
