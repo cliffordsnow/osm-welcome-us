@@ -16,19 +16,18 @@
 
 /* This needs a major change since we only use two languages, English and Spanish */
 
-$welcome_bottom['en']['single_lang'] = 'We sent this message in %1$s, because we thought that to be your language.';
-/* $welcome_bottom['nl']['single_lang'] = 'We hebben dit bericht in het %1$s verzonden, omdat we denken dat dat je taal is.';
+/* $welcome_bottom['en']['single_lang'] = 'We sent this message in %1$s, because we thought that to be your language.';
+ * $welcome_bottom['nl']['single_lang'] = 'We hebben dit bericht in het %1$s verzonden, omdat we denken dat dat je taal is.';
  * $welcome_bottom['fr']['single_lang'] = 'Nous avons envoyé ce message en %1$s, parce que nous pensons que c’est votre langue.';
  * $welcome_bottom['de']['single_lang'] = 'Wir haben diese Nachricht auf %1$s geschickt, weil wir denken, dass dies Ihre Sprache ist.';
  */
 
 
-$welcome_bottom['en']['if_wrong_sorry'] = 'If that’s wrong, we’re sorry! You can reply to this message if you’d like to let us know.';
-/* $welcome_bottom['nl']['if_wrong_sorry'] = 'Als dat niet klopt, sorry! Je kan antwoorden op dit bericht om het ons te laten weten.';
+/* $welcome_bottom['en']['if_wrong_sorry'] = 'If that’s wrong, we’re sorry! You can reply to this message if you’d like to let us know.';
+ * $welcome_bottom['nl']['if_wrong_sorry'] = 'Als dat niet klopt, sorry! Je kan antwoorden op dit bericht om het ons te laten weten.';
  * $welcome_bottom['fr']['if_wrong_sorry'] = 'Si c’est faux, excusez-nous! Vous pouvez répondre à ce message pour nous en informer, si vous voulez.';
+ * $welcome_bottom['de']['if_wrong_sorry'] = 'Wenn das falsch ist, tut es und leid! Sie können auf diese Nachricht antworten, wenn Sie es uns mitteilen möchten.';
  */
-$welcome_bottom['de']['if_wrong_sorry'] = 'Wenn das falsch ist, tut es und leid! Sie können auf diese Nachricht antworten, wenn Sie es uns mitteilen möchten.';
-
 
 $welcome_bottom['nl']['tell_us_pref_lang'] = 'Om ons te laten weten in welke taal je berichten wil ontvangen van OpenStreetMap België, kan je een van de links hieronder gebruiken.';
 $welcome_bottom['fr']['tell_us_pref_lang'] = 'Pour nous faire savoir quelle est votre langue préferée pour recevoir les messages de OpenStreetMap Belgique, veuillez utiliser un des hyperliens ci-dessous.';

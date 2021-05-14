@@ -41,7 +41,7 @@ function generate_message ($type, $userid, $language=null) {
 		<input type="hidden" name="type" value="'.$type.'"></input>
 		<textarea name="messagetext" id="copyablemessage">';
 
-	switch ($type) { //This section needs revision to include English and Spanish languages
+	switch ($type) { 
 		
 		case 'welcome' :
 			
@@ -59,28 +59,18 @@ function generate_message ($type, $userid, $language=null) {
 			}
 			
 			if (isset($info->language)) {
-				if ($info->language === 'Dutch' && file_exists(INCLUDES_PATH . '/messages/welcome-nl.php')) {
-					include(INCLUDES_PATH . '/messages/welcome-nl.php');
-					
-				} elseif ($info->language === 'French' && file_exists(INCLUDES_PATH . '/messages/welcome-fr.php')) {
-					include(INCLUDES_PATH . '/messages/welcome-fr.php');
+				if ($info->language === 'Spanish' && file_exists(INCLUDES_PATH . '/messages/welcome-es.php')) {
+					include(INCLUDES_PATH . '/messages/welcome-es.php');
 					
 				} elseif ($info->language === 'English' && file_exists(INCLUDES_PATH . '/messages/welcome-en.php')) {
 					include(INCLUDES_PATH . '/messages/welcome-en.php');
-					
-				} elseif ($info->language === 'German' && file_exists(INCLUDES_PATH . '/messages/welcome-de.php')) {
-					include(INCLUDES_PATH . '/messages/welcome-de.php');
 				} else {
 					include(INCLUDES_PATH . '/messages/welcome-en.php');
-					include(INCLUDES_PATH . '/messages/welcome-nl.php');
-					include(INCLUDES_PATH . '/messages/welcome-fr.php');
-					include(INCLUDES_PATH . '/messages/welcome-de.php');
+					include(INCLUDES_PATH . '/messages/welcome-es.php');
 				}
 			} else {
 				include(INCLUDES_PATH . '/messages/welcome-en.php');
-				include(INCLUDES_PATH . '/messages/welcome-nl.php');
-				include(INCLUDES_PATH . '/messages/welcome-fr.php');
-				include(INCLUDES_PATH . '/messages/welcome-de.php');
+				include(INCLUDES_PATH . '/messages/welcome-es.php');
 			}
 			
 			$multiple_langs = false;
@@ -118,14 +108,14 @@ function generate_message ($type, $userid, $language=null) {
 				echo '* '.$messages['weeklyosm'].PHP_EOL.PHP_EOL;
 				echo $messages['endingsentence'].PHP_EOL.PHP_EOL;
 				echo $_SESSION['displayname'].PHP_EOL.PHP_EOL;
-				echo $messages['osm-be'].PHP_EOL.PHP_EOL;
+				echo $messages['osm-us'].PHP_EOL.PHP_EOL; //needs updating
 				
-				if (!$multiple_langs) {
-					foreach ($welcome_bottom as $messages) {
-						echo '*'.sprintf($messages['single_lang'], $messages[$lang]).' '.$messages['if_wrong_sorry'].'*'.PHP_EOL.PHP_EOL;
+//				if (!$multiple_langs) {
+//					foreach ($welcome_bottom as $messages) {
+//						echo '*'.sprintf($messages['single_lang'], $messages[$lang]).' '.$messages['if_wrong_sorry'].'*'.PHP_EOL.PHP_EOL;
 //						echo '*'.sprintf($messages['single_lang'], $messages[$lang]).' '.$messages['tell_us_pref_lang'].'*'.PHP_EOL.PHP_EOL;
-					}
-				}
+//					}
+//				}
 				
 /*				if ($multiple_langs) {
 					echo '<h3><span class="invisible"># </span>'.$language_names[$lang].'</h3>';
@@ -152,7 +142,7 @@ function generate_message ($type, $userid, $language=null) {
 				echo '</p>';
 				echo '<p>'.$messages['endingsentence'].'</p>';
 				echo '<p>'.$_SESSION['displayname'].'</p>';
-				echo '<p>'.$messages['osm-be'].'</p>';
+				echo '<p>'.$messages['osm-us'].'</p>';
 				
 				echo '<p>&nbsp;</p>';
 				

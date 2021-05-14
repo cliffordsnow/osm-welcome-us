@@ -38,7 +38,7 @@ $welcome[$language]['info_other'] = 'If you want to know how to tag something, t
 
 $welcome[$language]['info_solution'] = 'to search for “site:wiki.openstreetmap.org [search term]” with your favourite search engine. You can also browse through the questions on '.markdown_link('the Help site', 'https://help.openstreetmap.org').' or ask one yourself, or post on '.markdown_link('the forum', 'https://forum.openstreetmap.org/viewforum.php?id=29').'.';
 
-$welcome[$language]['news'] = 'If you want to stay on top of the United States community, subscribe to the '.markdown_link('US  mailing list', 'https://lists.openstreetmap.org/listinfo/talk-us').' or sign up for the '.markdown_link('Belgian newsletter', 'http://osm.us3.list-manage.com/subscribe?u=https://openstreetmap.us3.list-manage.com/subscribe?u=162692bfdedb78ec46fd108a3&id=801ce00e6d').' or chat with us on '.markdown_link('Slack', 'https://osmus.slack.com/').'. You can also follow '.markdown_link('@OpenStreetMapUS', 'https://twitter.com/OpenStreetMapUS').' on Twitter, or the '.markdown_link('Facebook group', 'https://www.facebook.com/groups/osm.us/').'.';
+$welcome[$language]['news'] = 'If you want to stay on top of the United States community, subscribe to the '.markdown_link('US  mailing list', 'https://lists.openstreetmap.org/listinfo/talk-us').' or sign up for the '.markdown_link('OSM US newsletter', 'http://osm.us3.list-manage.com/subscribe?u=https://openstreetmap.us3.list-manage.com/subscribe?u=162692bfdedb78ec46fd108a3&id=801ce00e6d').' or chat with us on '.markdown_link('Slack', 'https://osmus.slack.com/').'. You can also follow '.markdown_link('@OpenStreetMapUS', 'https://twitter.com/OpenStreetMapUS').' on Twitter, or the '.markdown_link('Facebook group', 'https://www.facebook.com/groups/osm.us/').'.';
 
 $welcome[$language]['resultmaps'] = 'To see active mappers in your neighbourhood or to check out how much you’ve contributed, check out the maps and stats at '.markdown_link('resultmaps.neis-one.org', 'http://resultmaps.neis-one.org/').'.';
 
@@ -48,4 +48,3 @@ $welcome[$language]['endingsentence'] = 'Happy Mapping!';
 
 $welcome[$language]['osm-us'] = 'OpenStreetMap United States';
 
-$welcome[$language]['multiple_langs'] = 'We sent this message in multiple languages, because we were unable to detect your language.';
