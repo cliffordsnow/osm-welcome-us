@@ -33,10 +33,11 @@ class FetchChangesets {
 		}
 		
 		$changesets = simplexml_load_string(
-			call_api('changesets', array('user'=>$userid), 'GET', NO_AUTH)
+//		 	call_api('changesets', array('user'=>$userid), 'GET', NO_AUTH)
+			call_api('changesets/?user=' . $userid, array('user'=>$userid), 'GET', NO_AUTH) 
 		);
 		self::$changesets[$userid] = $changesets;
-		
+
 		return $changesets;
 	}
 		
@@ -73,5 +74,6 @@ function fetch_changesets_by_display_name ($display_name) {
 	return FetchChangesets::ByDisplayName($display_name);
 }
 function fetch_changesets_by_user_id ($userid) {
+	error_log('just checking ' . $userid);
 	return FetchChangesets::ByUserId($userid);
 }
