@@ -42,7 +42,7 @@ function markdown_link ($text, $url) {
 				<li>Brief</li>
 			</ul>
 
-			<p>The second part of the Welcome tools is the opportunity to review the new mappers first edits and offer constructive tips to help the mapper improve. To review the edit(s) select the View User on OSMCha button. After reviewing the edit, leave changeset comments to help the user become a better mapper. One way is to leave a #TIP: comment with a quick suggestion on how to improve the edit. For example #TIP: square buildings by selecting the building outline then just type a 'q' More help using OSMCha can on the <a href="https://osmcha.org/about">OSMCha website</a></p>
+			<p>The second part of the Welcome tools is the opportunity to review the new mappers first edits and offer constructive tips to help the mapper improve. To review the edit(s) select the View User on OSMCha button. After reviewing the edit, leave changeset comments to help the user become a better mapper. One way is to leave a #TIP: comment with a quick suggestion on how to improve the edit. For example #TIP: square buildings by selecting the building outline then just type a <font style="color: red; font size="+1"><strong>q</strong></font>. More help using OSMCha can be found on the <a href="https://osmcha.org/about">OSMCha website</a></p>
 			<p>When leaving changeset comments remember:</p>
 		<ul>
 			<li>Be friendly</li>
