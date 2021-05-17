@@ -64,7 +64,7 @@ function page_start ($title, $backto=null, $beforetitle=null) {
 		echo '
 			<ul>
 				<li><a href="index.php">List</a></li>
-				<li><a href="info.php">Help on welcoming</a></li>
+				<li><a href="help.php">Help on welcoming</a></li>
 				<!--<li><a href="stats.php">Statistics</a></li>-->
 			</ul>
 			<div class="account">
