@@ -4,6 +4,8 @@
 
 This was originally developed in Belgium and can be found in the GitHub repository https://github.com/osmbe/osm-welcome-belgium
 
+Now in the process of adding the State where the first edit occured
+
 This is a platform to coordinate welcoming new mappers in the United States. The source code is hackish, extremely ugly and doesn't seem to follow *any* design principle, but it works. Mostly.
 
 You can see a live instance for [United States](https://welcome.snowandsnow.us/).
